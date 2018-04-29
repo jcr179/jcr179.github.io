@@ -1,1 +1,117 @@
-"Hello world" 
+<!doctype html> <!-- indicates that this is a html5 document -->
+<html lang="en-US"> <!-- important for accessibility and search engines -->
+<html>
+
+<!-- In the head element is metadata about the page -->
+<head> <title>This is the page title</title> </head> 
+
+<! -- In the body element is user-visible content -->
+<body>
+<h1>Heading 1</h1> 
+<h2>Heading 2. And they decrease in size as heading N increases...</h2>
+<h3>Heading 3. Be mindful of what you use as headings: search engines index pages based on them.</h3>
+<p>This belongs to its own paragraph. <br>This &lt;br&gt; tag is for a newline.</p>
+<p>The next p tag is two lines underneath the last paragraph</p>
+<p>Text
+in    a     p    tag 
+can be    spaced arbitrarily   in 
+the
+source 
+but these spaces     are ignored by the browser.</p>
+<pre>
+If you want 
+the spacing in the source 
+to instead
+be 
+p r e s e r v e d ,
+use of the &lt;pre&gt; tag allows you to,
+and forces a monospace font.</pre>
+<p>Everything between the body tags is visible on the page.</p>
+
+<p>You can include an image in a paragraph tag: <img src ="Dead_rising_frank_bust.png" alt="frank" height="60"> ...this is a more explicit example of
+nested tags. But the whole document is nested inside the &lt;html&gt; tag.<br>If the image does not exist, the alt attribute is used: 
+<img src="DNE.png" alt="Picture stand-in"></p>
+<br>
+<button>You can include buttons</button>
+
+<p>You can include links to <a href="https://www.google.com">stuff</a> too.</p>
+
+<ul>
+    <li>You can make</li>
+    <li>a list of unordered items</li>
+</ul>
+
+<ol>
+    <li>Or, if order is important,</li>
+    <li>a list of ordered items</li>
+</ol>
+
+<p>Characters are escaped with particular codes. &lt; is done with '& lt ;' and so on.</p>
+
+<p>An <b>HTML element</b> is an entity consisting of a start tag, the content sandwiched between, and the end tag.</p>
+<p title="mouseover">An <b>HTML attribute</b> are like command-line arguments found in the start tag of an HTML element. The attribute
+"title" was added to this paragraph's start tag. Hover over this paragraph to see.<br>Single or double quotes to indicate value of an 
+attribute are both OK.</p>
+
+<p>The horizontal rule tag &lt;hr&gt; makes the horizontal line<hr>separating this blurb.</p>
+
+<p>With the 'style' attribute applied to a &lt;p&gt; tag, you can do some cool stuff.<br>
+You can change <p style="color:blue;">the color</p> of text, its <p style="font-size:200%;">size</p>, or <p style="color:blue; font-size:200%;">both
+at the same time.</p>But doing it this way you can only change paragraphs at a time.</p>
+
+<!-- <p style="color:[color of text]; background-color:[color of background body or this paragraph]; font-family:[verdana, courier, etc];
+     font-size:[size of text as percent or px]; text-align:[horizontal for horizontal alignment]; border:2px solid Tomato;
+     background-color:rgba(255, 99, 71, 0.5) [can use rgb/rgba/hsl/hsla/hex];"     -->
+
+<!-- <tagname style="property:value;"> is the format for the 'style' attribute, where property and value are CSS properties and values -->
+
+<p>Now for text formatting...<br>
+<b>Bold text</b><br>
+<strong>"Important" text</strong><br>
+<i>Italicized text</i><br>
+<em>"Emphasized" text</em><br>
+<mark>Marked text</mark><br>
+<small>Small text LOL</small><br>
+<del>Deleted text</del><br>
+<ins>Inserted text</ins><br>
+<u>Underlined text</u><br>
+You can use subscripts<sub>like this</sub> or superscripts<sup>like this</sup><br>
+
+<blockquote>You can make fancy blockquotes<br>such as this</blockquote>
+
+The &lt;bdo&gt; tag makes the text inside display differently, such as right to left: <bdo dir="rtl">like this</bdo>
+</p>
+
+<p>Many elements can be given the same class attribute so operations can be done on that class, <br>but
+each element can be assigned a unique ID with an ID attribute (a name). So an external css document can <br>
+style everything with a certain class one way, but have an exception for a certain ID.<br>An element can belong to more than one class.<br>
+Elements of different types (paragraphs, hyperlinks etc.) can belong to the same class.</p>
+
+<p>The &lt;script&gt; tag is used to define a client-side script using JavaScript. <br>
+JS can change html element content, attributes.<br>
+<b>The page will not respond to the user during script execution.<br>
+So keep scripts short or use the Web Worker API (runs scripts in background).</b>
+<br>
+The Web Storage API is a more secure, faster, more robust method of storing user data/interactions than cookies.<br>
+</p>
+
+<!--
+HTML5 introduced a method to let web designers take control over the viewport, through the <meta> tag.
+
+The viewport is the user's visible area of a web page. It varies with the device, and will be smaller on a mobile phone than on a computer screen.
+
+You should include the following <meta> viewport element in all your web pages:
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling.
+
+The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+-->
+
+
+
+
+</body> </html>
+
