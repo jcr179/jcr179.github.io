@@ -1,117 +1,208 @@
-<!doctype html> <!-- indicates that this is a html5 document -->
-<html lang="en-US"> <!-- important for accessibility and search engines -->
-<html>
-
-<!-- In the head element is metadata about the page -->
-<head> <title>This is the page title</title> </head> 
-
-<! -- In the body element is user-visible content -->
-<body>
-<h1>Heading... 1?!?!?!?!</h1> 
-<h2>Heading 2. And they decrease in size as heading N increases...</h2>
-<h3>Heading 3. Be mindful of what you use as headings: search engines index pages based on them.</h3>
-<p>This belongs to its own paragraph. <br>This &lt;br&gt; tag is for a newline.</p>
-<p>The next p tag is two lines underneath the last paragraph</p>
-<p>Text
-in    a     p    tag 
-can be    spaced arbitrarily   in 
-the
-source 
-but these spaces     are ignored by the browser.</p>
-<pre>
-If you want 
-the spacing in the source 
-to instead
-be 
-p r e s e r v e d ,
-use of the &lt;pre&gt; tag allows you to,
-and forces a monospace font.</pre>
-<p>Everything between the body tags is visible on the page.</p>
-
-<p>You can include an image in a paragraph tag: <img src ="Dead_rising_frank_bust.png" alt="frank" height="60"> ...this is a more explicit example of
-nested tags. But the whole document is nested inside the &lt;html&gt; tag.<br>If the image does not exist, the alt attribute is used: 
-<img src="DNE.png" alt="Picture stand-in"></p>
-<br>
-<button>You can include buttons</button>
-
-<p>You can include links to <a href="https://www.google.com">stuff</a> too.</p>
-
-<ul>
-    <li>You can make</li>
-    <li>a list of unordered items</li>
-</ul>
-
-<ol>
-    <li>Or, if order is important,</li>
-    <li>a list of ordered items</li>
-</ol>
-
-<p>Characters are escaped with particular codes. &lt; is done with '& lt ;' and so on.</p>
-
-<p>An <b>HTML element</b> is an entity consisting of a start tag, the content sandwiched between, and the end tag.</p>
-<p title="mouseover">An <b>HTML attribute</b> are like command-line arguments found in the start tag of an HTML element. The attribute
-"title" was added to this paragraph's start tag. Hover over this paragraph to see.<br>Single or double quotes to indicate value of an 
-attribute are both OK.</p>
-
-<p>The horizontal rule tag &lt;hr&gt; makes the horizontal line<hr>separating this blurb.</p>
-
-<p>With the 'style' attribute applied to a &lt;p&gt; tag, you can do some cool stuff.<br>
-You can change <p style="color:blue;">the color</p> of text, its <p style="font-size:200%;">size</p>, or <p style="color:blue; font-size:200%;">both
-at the same time.</p>But doing it this way you can only change paragraphs at a time.</p>
-
-<!-- <p style="color:[color of text]; background-color:[color of background body or this paragraph]; font-family:[verdana, courier, etc];
-     font-size:[size of text as percent or px]; text-align:[horizontal for horizontal alignment]; border:2px solid Tomato;
-     background-color:rgba(255, 99, 71, 0.5) [can use rgb/rgba/hsl/hsla/hex];"     -->
-
-<!-- <tagname style="property:value;"> is the format for the 'style' attribute, where property and value are CSS properties and values -->
-
-<p>Now for text formatting...<br>
-<b>Bold text</b><br>
-<strong>"Important" text</strong><br>
-<i>Italicized text</i><br>
-<em>"Emphasized" text</em><br>
-<mark>Marked text</mark><br>
-<small>Small text LOL</small><br>
-<del>Deleted text</del><br>
-<ins>Inserted text</ins><br>
-<u>Underlined text</u><br>
-You can use subscripts<sub>like this</sub> or superscripts<sup>like this</sup><br>
-
-<blockquote>You can make fancy blockquotes<br>such as this</blockquote>
-
-The &lt;bdo&gt; tag makes the text inside display differently, such as right to left: <bdo dir="rtl">like this</bdo>
-</p>
-
-<p>Many elements can be given the same class attribute so operations can be done on that class, <br>but
-each element can be assigned a unique ID with an ID attribute (a name). So an external css document can <br>
-style everything with a certain class one way, but have an exception for a certain ID.<br>An element can belong to more than one class.<br>
-Elements of different types (paragraphs, hyperlinks etc.) can belong to the same class.</p>
-
-<p>The &lt;script&gt; tag is used to define a client-side script using JavaScript. <br>
-JS can change html element content, attributes.<br>
-<b>The page will not respond to the user during script execution.<br>
-So keep scripts short or use the Web Worker API (runs scripts in background).</b>
-<br>
-The Web Storage API is a more secure, faster, more robust method of storing user data/interactions than cookies.<br>
-</p>
-
+<!DOCTYPE HTML>
 <!--
-HTML5 introduced a method to let web designers take control over the viewport, through the <meta> tag.
-
-The viewport is the user's visible area of a web page. It varies with the device, and will be smaller on a mobile phone than on a computer screen.
-
-You should include the following <meta> viewport element in all your web pages:
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling.
-
-The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
-
-The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<html>
+	<head>
+		<title>Prologue by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
+		<!-- Header -->
+			<div id="header">
 
+				<div class="top">
 
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+							<h1 id="title">Jane Doe</h1>
+							<p>Hyperspace Engineer</p>
+						</div>
 
-</body> </html>
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
 
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
+								site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
+								<p>Ligula scelerisque justo sem accumsan diam quis<br />
+								vitae natoque dictum sollicitudin elementum.</p>
+							</header>
+
+							<footer>
+								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Portfolio</h2>
+							</header>
+
+							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
+							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
+							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
+							fusce hendrerit lacus ridiculus.</p>
+
+							<div class="row">
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+										<header>
+											<h3>Ipsum Feugiat</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+										<header>
+											<h3>Rhoncus Semper</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+										<header>
+											<h3>Magna Nullam</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+										<header>
+											<h3>Natoque Vitae</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+										<header>
+											<h3>Dolor Penatibus</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<header>
+											<h3>Orci Convallis</h3>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>About Me</h2>
+							</header>
+
+							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+
+							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
+							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
+							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
+							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
+							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
+							ornare iaculis.</p>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p>Elementum sem parturient nulla quam placerat viverra
+							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
+							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
+							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+
+							<form method="post" action="#">
+								<div class="row">
+									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="col-12">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="col-12">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
