@@ -2105,7 +2105,7 @@ input, select, textarea {
 			position: relative;
 			color: #fff;
 			font-weight: 600;
-			font-size: 1em;
+			font-size: 0.8em;
 			line-height: 1em;
 		}
 
@@ -2207,6 +2207,11 @@ input, select, textarea {
 	#main {
 		margin-left: 375px;
 	}
+    
+        #main > mark {
+            background-color: yellow;
+            color: black;
+        }
 
 		#main > section {
 			margin: 0;
@@ -2215,15 +2220,17 @@ input, select, textarea {
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 			text-align: center;
 			background-image: url("images/overlay.png");
+            font-weight: 900;
 		}
 
 			#main > section.dark {
 				color: #ddd;
-				color: rgba(255, 255, 255, 0.75);
+				color: rgba(255, 255, 255, 1.0);
 			}
 
 				#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
 					color: inherit;
+                    font-weight: 900;
 				}
 
 				#main > section.dark strong {
@@ -2248,7 +2255,8 @@ input, select, textarea {
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background-image: url("../../images/20190615_202508_HDR.jpg");
+                /*background-image: url("../../images/banner.jpg");*/
 			}
 
 			#main > section.two {
