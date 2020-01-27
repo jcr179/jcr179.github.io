@@ -80,6 +80,7 @@
 							</header>
 
 							<!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a> -->
+                            <class="image featured"><img src="images/about-me.gif" alt=""/>
 
 							<p>I'm graduating in March 2020 with my Master of Science in Electrical and Computer
                             Engineering from UCLA. My graduate education and thesis focused on machine learning. 
@@ -114,27 +115,200 @@
                             <header>
                                 <h3>Projects</h3>
                             </header>
+                            
+                            <p><img src="images/projects.png"></p>
 
-							<li>bleh</li>
-                            <li>blah</li>
+							<li><u>City graph self-localization simulation.</u> 
+                            <a href="https://github.com/jcr179/city-graph-explorations" class="icon brands fa-github"><span class="label">Github</span></a>
+                            <br>
+                            Using real landmark data from Washington D.C., this is a simulation pipeline to 
+                            demonstrate feasibility of self-localization of a vehicle traversing the given area 
+                            by encoding street segments based on their respective landmarks. </li><br>
+                            
+                            <li><u>Project LoFi: Activity and mood-based music recommendation system.</u> 
+                            <a href="https://www.youtube.com/watch?v=Ok8iE7S7UCg" class="icon brands fa-youtube"><span class="label">YouTube</span></a>
+                            <a href="https://github.com/jcr179/lofi" class="icon brands fa-github"><span class="label">Github</span></a>
+                            <br>
+                            Project [Lo]gical [Fi]tness consists of a Hexiwear, a wearable IoT device, Raspberry Pi, 
+                            and a 1D convolutional neural network trained using Keras and implemented in an Android app 
+                            using TensorFlow Lite and Android Studio. Together, heart rate variability measured from the Hexiwear and 
+                            accelerometer data from the user's smartphone allow for the estimation of mood and 
+                            cadence, respectively. Using this information together allows for an efficient look-up of 
+                            an augmented dataset consisting of songs quantified by their emotional content, retrieving 
+                            the most fitting song for the user in real-time. </li><br>
+                            
+                            <li><u>Research paper presentation: Information Dropout.</u> 
+                            <a href="https://arxiv.org/pdf/1611.01353.pdf" class="fas fa-link"><span class="label"></span></a>
+                            <br>
+                            Presented as a final class project a research paper about a generalization of vanilla dropout based on the information theoretic 
+                            basis of the information bottleneck principle of interpreting neural networks. By including multiplicative 
+                            noise that is a function of the input, information dropout can improve image classifier performance on 
+                            datasets of smaller size. </li><br>
+                            
+                            <li><u>Abridged scribe note on structural risk minimization and non-uniform learnability.</u> 
+                            <a href="https://github.com/jcr179/misc/blob/master/14_srm_nul.pdf" class="icon brands fa-github"><span class="label">Github</span></a>
+                            <br>
+                            Together with a partner, we wrote a scribe note concerning structural risk minimization and 
+                            non-uniform learnability in the context of statistical machine learning. This note is a summary of lecture 
+                            discussions from the graduate course, Fundamentals of Statistical Machine Learning. 
+                            </li><br>
+                            
+                            <li><u>Research paper presentation: Maximizing Expected Local Improvement.</u> 
+                            <a href="https://grail.cs.washington.edu/projects/stateselection/stateselection.pdf" class="fas fa-link"><span class="label"></span></a>
+                            <br>
+                            Presented to a reinforcement learning reading group at UCLA a paper on deep reinforcement learning 
+                            concerning the definition of a quantity capturing the expected local improvement that might be 
+                            attained when new actions are added to the action space of a given state. By determining the states 
+                            that could stand to receive the most improvement, human experts can be better informed of where to 
+                            insert actions for the agent to better learn the space. </li><br>
+                            
+                            <!--
+                            <li><u>LSTM neural network design for classifying brain signals.</u>
+                            <br>
+                            Given this dataset, an LSTM neural network was designed to attempt maximizing the 
+                            classification accuracy on the dataset. Exploratory data analysis was used to remove 
+                            the first bit of each sample. Data augmentation techniques such as xyz were also used. 
+                            Results were a classification accuracy of N%, which is a strong performance for this 
+                            challenging dataset; this would have won Nth place in the competition the dataset 
+                            was released with. </li><br>
+                            -->
+                            
+                            <li><u>Basic neural network library written from scratch.</u> 
+                            <a href="https://github.com/jcr179/nn-numpy" class="fab fa-github"><span class="label"></span></a>
+                            <br>
+                            Written in Python using only NumPy, a 3-layer fully-connected neural network was implemented. 
+                            This basic library includes batch normalization, optimizers like Adam, backpropagated gradient 
+                            calculation and loss function implementation. Writing all operations with matrix operations 
+                            was a great learning experience. The network itself functions as a relatively precise classifier 
+                            when trained and tested on the CIFAR-10 dataset. </li><br>
+                            
+                            <li><u>Semantic classification of 20 Newsgroup dataset.</u>
+                            <br>
+                            Used NLP techniques such as lemmatization and stemming in combination with dimensionality reduction 
+                            techniques like latent semantic indexing and non-negative matrix factorization to extract semantics 
+                            from various emails in the dataset. Using logistic regression, classified 8 categories of articles, 
+                            4 of which belonged to 1 group of topics and the other 4 belonging to another group, with 97.5% accuracy.
+                            </li><br>
+                            
+                            <li><u>Nearest-neighbor classification using prototype selection with linear optimization.</u>
+                            <br>
+                            Using linear programming techniques and CvxPy, implemented prototype selection in a large dataset 
+                            to reduce computational cost of following operations.
+                            </li><br>
+                            
+                            <li><u>Real-time WiFi activity analysis system.</u>
+                            <br>
+                            Undergraduate capstone design project. WiFi activity broadcasted by various devices, with respect to 
+                            user privacy, was collected by a WiFi antenna connected to a Raspberry Pi. A connected laptop processed 
+                            and visualized the activity data in real-time using Python visualization packages.
+                            </li><br>
+                            
+                            <li><u>Custom-made quadcopter.</u> 
+                            
+                            <a href="https://www.youtube.com/watch?v=L71Z2NEef78" class="fab fa-youtube"></a><br>
+                            Made a heavy quadcopter by throwing parts together, and took it for its maiden and final flight.
+                            </li><br>
+                            
+                            <li><u>DIY guitar tuner.</u> 
+                            <a href="https://www.youtube.com/watch?v=a4ragvOETrg" class="fab fa-youtube"></a><br>
+                            Using a 1/4" jack, an electric guitar's signal can be read by the Arduino where the uploaded 
+                            sketch compares the frequency of the signal received to a lookup table, returning the resulting 
+                            pitch and whether the input signal is flat or sharp via seven-segment LED.
+                            </li><br>
+                            
+                            <!-- the roychowdhury course stuff -->
                             
                             <br><br>
                             
                             <header>
                                 <h3>Experience</h3>
                             </header>          
+                            
+                            <li><u>Graduate Research Assistant, UCLA (ARNI Lab)</u> 
+                            <a href="http://arni.ee.ucla.edu/" class="fas fa-link"></a>
+                            <br>
+                            Working on my thesis with primary applications in autonomous vehicle navigation. My thesis aims to make 
+                            navigation and localization more robust to missing information. By utilizing a dataset containing 
+                            information about the locations of common landmarks such as trees and fire hydrants, street segments 
+                            are encoded based on adjacent landmarks. Developing an algorithm to efficiently encode and decode 
+                            such informations to localize even with observation errors. Implementing using Python and Jupyter Notebook.
+                            </li><br>
+                            
+                            <li><u>Graduate Student Researcher, UCLA (UCLA HCI)</u> 
+                            <a href="https://hci.ucla.edu/#projects" class="fas fa-link"></a>
+                            <br>
+                            Developed a multi-abstraction-level question-answer system for algorithms to educate users of any 
+                            technical background. Designed, executed, and analyzed Wizard of Oz experiments to test the system 
+                            feasbility. The 18-user study showed that the system answered 87.3% of their questions about the 
+                            algorithm.
+                            </li><br>
+                            
+                            <li><u>Undergraduate Research Assistant and Project Leader, Ryerson University (OPR-AL)</u> 
+                            <a href="https://www.ee.ryerson.ca/opr/" class="fas fa-link"></a>
+                            <br>
+                            Used ESP32 BLE/WiFi development boards to develop a de-centralized proximity sensor system. Built 
+                            off ideas from the LEACH family of sensor clustering algorithms. Led a team of 2 other undergraduate 
+                            students in research direction and implementation.
+                            </li><br>  
+
+                            <li><u>Undergraduate Research Assistant, Ryerson University (OPR-AL)</u> 
+                            <a href="https://www.ee.ryerson.ca/opr/" class="fas fa-link"></a>
+                            <br>
+                            Assisted with developing a physical-level network usage monitoring system. Over an Ethernet BASE100-TX 
+                            connection, nominal and effective data rates were measured. Crafted a special packet that would render 
+                            the otherwise un-observable (with available hardware) test packets to be observable. 
+                            </li><br>                            
 
                             <br><br>
+                            
 
                             <header>
                                 <h3>Coursework</h3>
                             </header>  
+                            
+                            <li><u>Graduate Courses</u>
+                            <br>
+                            - Linear programming<br>
+                            - Information theory<br>
+                            - Embedded systems<br>
+                            - Large-scale data mining<br>
+                            - Deep learning and neural networks<br>
+                            - Large-scale network analysis<br>
+                            - Fundamentals of statistical machine learning<br>
+                            - Stochastic processes
+                            </li><br>
+                            
+                            <li><u>Select Undergraduate Courses</u>
+                            <br>
+                            - Linear algebra<br>
+                            - Software systems<br>
+                            - Differential equations and vector calculus <br>
+                            - Algorithms and data structures <br>
+                            - Field theory <br>
+                            - Electronic circuits <br>
+                            - Discrete math <br>
+                            - Microprocessor systems <br>
+                            - Electromagnetics <br>
+                            - Signals and systems <br>
+                            - Probability<br>
+                            - Communication systems <br>
+                            - Control systems <br>
+                            - Object-oriented analysis and design <br>
+                            - Digital signal processing <br>
+                            - Digital image processing <br>
+                            - Computer organization and architecture <br>
+                            - Multimedia systems <br>
+                            - Optical communication
+                            </li><br>
+                            
 
                             <br><br>
 
+                            <!--
                             <header>
                                 <h3>Honors, Awards & Accomplishments</h3>
-                            </header>                            
+                            </header>    
+                            -->
 
 							<!--
                             <div class="row">
@@ -192,26 +366,41 @@
 							<header>
 								<h2>Fighting Games</h2>
 							</header>
+                            
+                            <p><img src="images/fighting_games2.PNG"></p>
 
                             <header>
 								<h3>Community Involvement</h2>
 							</header>
 
-							<li>bleh</li>
-                            <li>blah</li>
+							<li><u>Organizer, Fighting Game Community at UCLA</u> 
+                            <a href="https://www.facebook.com/FGCatUCLA" class="fab fa-facebook"></a><br>
+                            Handles various affairs including tournament organization to help facilitate 
+                            a more streamlined and open environment.
+                            <br></li>
+                            
                             
                             <br><br>
                             
                             
                            	<header>
-								<h3>Tournament Results</h2>
+								<h3>Selected Tournament Results</h2>
 							</header>
 
-							<li>bleh</li>
-                            <li>blah</li>
+							<li><u>3rd</u>, Street Fighter III: 3rd Strike Tournament, FGC at UCLA 
+                            <a href="https://www.youtube.com/watch?v=vjHck0ib0b8" class="fab fa-youtube"></a></li>
                             
+                            <li><u>1st</u>, Mystery Game Tournament 2, FGC at UCLA</li>
                             
-
+                            <li><u>2nd</u>, Circuit of Existence, FGC at UCLA 
+                            <a href="https://www.youtube.com/watch?v=rhFS4jwsdtI&feature=youtu.be" class="fab fa-youtube"></a></li>
+                            
+                            <li><u>5th</u>, UniCLAsh #5, FGC at UCLA 
+                            <a href="https://www.youtube.com/watch?v=v1QUQXnRYnE&feature=youtu.be" class="fab fa-youtube"></a></li>
+                            <li><u>257th/1157</u>, EVO 2019 (UNIST), Las Vegas 
+                            <a href="https://smash.gg/tournament/evo-2019/event/under-night-in-birth-exe-late-st/entrant/3431642" class="fas fa-link"></a></li>
+                            <li><u>16th</u>, World Gaming Street Fighter V Regional Finals, Toronto</li>
+                            
                             
                         </div>
                     </section>
@@ -222,9 +411,43 @@
 							<header>
 								<h2>Music</h2>
 							</header>
+                            
+                            <p><img src="images/music.png"></p>
 
-							<li>bleh</li>
-                            <li>blah</li>
+							<li><u>Transcriptions</u><br>
+                            - Gathers Under Night... (Character Select Theme of UNDER NIGHT IN-BIRTH Exe:Late) by Raito 
+                            <a href="https://www.youtube.com/watch?v=6KQ6XTObjOQ" class="fab fa-youtube"></a><br>
+                            - 出会い (Encounter) by Shoji Meguro 
+                            <a href="https://www.youtube.com/watch?v=9uxnS4gR1oc" class="fab fa-youtube"></a><br>
+                            - Rave On by Masafumi Takada 
+                            <a href="https://www.youtube.com/watch?v=UZwWZA4zji8" class="fab fa-youtube"></a><br>
+                            - Fortune's Delight 
+                            <a href="https://www.youtube.com/watch?v=4EjpRnBXt5U" class="fab fa-youtube"></a><br>
+                            <br></li>
+                            
+                            <br>
+                            
+							<li><u>Perfomances</u><br>
+                            - Dancing Queen by Abba (Band cover by 元気食堂 Genki Shokudo) 
+                            <a href="https://www.youtube.com/watch?v=98fLhXeJ8vs" class="fab fa-youtube"></a><br>
+                            - Life Goes On by Shoji Meguro (Bass guitar) 
+                            <a href="https://www.youtube.com/watch?v=j361cfu12-U" class="fab fa-youtube"></a><br>
+                            - Butterfly Kiss by Shoji Meguro (Piano) 
+                            <a href="https://www.youtube.com/watch?v=hh9e7K75Lbg" class="fab fa-youtube"></a><br>
+                            - 出会い (Encounter) by Shoji Meguro (Piano) 
+                            <a href="https://www.youtube.com/watch?v=GOilEOuSG_c" class="fab fa-youtube"></a><br>
+                            - Animal Spirits by Vulfpeck (Piano) 
+                            <a href="https://www.youtube.com/watch?v=klNDrjE49G0" class="fab fa-youtube"></a><br>
+                            - Welcome to Vulf Records by Vulfpeck (Piano) 
+                            <a href="https://www.youtube.com/watch?v=qHEMZ3sslJo" class="fab fa-youtube"></a><br>
+                            - Beautiful Lie by Masafumi Takada (Piano) 
+                            <a href="https://www.youtube.com/watch?v=RiDq9_lSMb4" class="fab fa-youtube"></a><br>
+                            - Fallen Down (Reprise) by Toby Fox (Piano) 
+                            <a href="https://www.youtube.com/watch?v=agHBYVCGwLo" class="fab fa-youtube"></a><br>
+                            - Corner of Memories by Shoji Meguro (Piano) 
+                            <a href="https://www.youtube.com/watch?v=3DGozr_w8xo" class="fab fa-youtube"></a><br>
+                            
+                            <br></li>
                             
                         </div>
                     </section>                    
@@ -237,9 +460,17 @@
 								<h2>Resume & Contact</h2>
 							</header>
 
-							<p><a href="">View my resume here</a>.<br><br> If you would like to get in touch, feel free to 
-                            fill out an email to me below. Thanks for your time, and take care of yourself. </p>
+							<p><a href="https://drive.google.com/file/d/1S8sm7RJwCnh2MpqVBQXA8uyq66unrcQN/view?usp=sharing">
+                            Click here to view my resume</a>.<br><br> If you would like to get in touch, feel free to 
+                            send an email to me at:<br>
+                            jcrebanal17[at]gmail[dot]com<br>
+                            <class="image featured"><img src="images/footer.jpg"><br>
+                            Thanks for your time, and take care of yourself. <br>
+                            </p>
+                            
 
+
+                            <!--
 							<form method="post" action="#">
 								<div class="row">
 									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
@@ -252,6 +483,7 @@
 									</div>
 								</div>
 							</form>
+                            -->
 
 						</div>
 					</section>
